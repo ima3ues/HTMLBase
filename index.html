@@ -1,0 +1,230 @@
+<!-- declare document type -->
+<!DOCTYPE html>
+<!-- decalre language using en which represent english -->
+<html lang="en">
+
+    <!-- everything inside the head element (tag) will not be seen on the webpage -->
+    <head>
+        <!-- character encoding -->
+        <!-- process of converting characters (letters, digits, symbols, etc.) into a format that computers can understand and store as digital data -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Sue">
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
+        <title>
+            My First Webpage
+        </title>
+        <!-- link it to main.css to pretify the page -->
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1> Heading 1 </h1>
+            <h2> Heading 2 </h2>
+            <h3> Heading 3 </h3>
+            <h4> Heading 4 </h4>
+            <h5> Heading 5 </h5>  
+            <h6> Heading 6 </h6>
+
+            <hr>
+
+            <nav aria-label="=primary navigation">
+                <ul>
+                    <li>
+                        <a href="#breaking-and-list">breaking and list</a>
+                    </li>
+                    <li>          
+                        <a href="#others">others</a>
+                    </li>
+                    <li>
+                        <a href="#images">images</a>
+                    </li>
+                    <li>
+                        <a href="#section-in-section">section-in-section</a>
+                    </li>
+                    <li>
+                        <a href="#table">table</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <p> <abbr title="Hyper Text Markup Language">HTML</abbr> </p>
+        </header>
+
+        <hr>
+
+        <main>
+            <section id="breaking-and-list">
+                <h2>Breaking and List</h2>
+                <p>
+                    Type1 break with paragraph Break1
+                </p>
+                <p> Type1 break with paragraph  Break2 </p>
+    
+                <p>
+                    Type2
+                        <br> Type2 Break1  
+                        <br> &nbsp;&nbsp; Type2 Break2 with spacing
+                </p>
+            
+                <p>
+                    Break but wrong || 
+                    Example of incorrect line break 
+                </p>
+    
+                <p> Type of List 1 - Ordered List </p>
+                <ol>
+                    <li> Ordered List Line1 </li>
+                    <li> Ordered List Line2 </li>
+                </ol>
+                <p> Type of List 2 - Unordered List </p>
+                <ul>
+                    <li> Unordered List Line1 </li>
+                    <li> Unordered List Line2 </li>
+                </ul>
+            </section>
+    
+            <hr>
+    
+            <section id="others">
+                <h2>Others</h2>
+                <p>
+                    <em> This is my first webpage </em>
+                    <br><strong> This is my first webpage </strong>
+                </p>
+    
+                <dl>
+                    <dt> Description Term </dt>
+                    <dd> Description Detail </dd>
+                </dl>
+    
+                <p><a href="https://www.youtube.com/watch?v=mJgBOIoGihA">HTML</a></p>
+            </section>
+    
+            <hr>
+    
+            <section id="images">
+                <h2>Images</h2>
+                <!-- alt means the alt "things" that will pop out when the first link aren't work -->
+                <img src="img/img1.png" alt="image 1" title="this is just a title for image 1" width="300" height="200">
+                <br><img src="img/img2.png" alt="image 2" title="this is just a title for image 2" width="300" height="200">
+                <figure>
+                    <figcaption>
+                        figure caption for image 2
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/img3.png" alt="image 3" title="this is just a title for image 3" width="300" height="200" loading="lazy">
+                    <figcaption>
+                        figure caption for image 3
+                    </figcaption>
+                </figure>
+            </section>
+
+            <hr>
+
+            <section id="section-in-section">
+                <h2>Section in Section</h2>
+                <section>
+                    <h5>SIS 1</h5>
+                    <p>
+                        for section in section 1
+                    </p>
+                </section>
+                <section>
+                    <h5>SIS 2</h5>
+                    <p>
+                        for section in section 2
+                    </p>
+                </section>
+                <aside>
+                    <details>
+                        <summary>
+                            aside, details, and <mark>summary</mark>
+                        </summary>
+                        <p>
+                            the drop down after clicking
+                        </p>
+                        <p>
+                            display time: <time datetime="08:00">8am</time>
+                        </p>
+                    </details>
+                </aside>
+            </section>
+
+            <hr>
+
+            <section id="table">
+                <h2>Table</h2>
+                <table>
+                    <caption> Table </caption>
+                    <thead>
+                    <tr>
+                        <th>
+                            &nbsp;
+                        </th>
+                        <th>
+                            Time
+                        </th>
+                        <th>
+                            Activity
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th> Morning </th>
+                        <td>
+                            <time datetime="08:00">8am</time>-<time datetime="12:00">12pm</time>
+                        </td>
+                        <td> this is time description </td>
+                    </tr>
+                    <tr>
+                        <th> Afternoon </th>
+                        <td>
+                            <time datetime="13:00">1pm</time>-<time datetime="17:00">5pm</time>
+                        </td>
+                        <td> this is time description 2 </td>
+                    </tr>
+                    <tr>
+                        <th> Evening </th>
+                        <td rowspan="2">
+                            All Other Times
+                        </td>
+                        <td>
+                            free time
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> Night </th>
+                        <td>
+                            sleep
+                        </td>
+                    </tr>
+                </tbody>                
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            footer of table
+                        </td>
+                    </tr>
+                </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Sue</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back To Top</a>
+            </p>
+        </footer>
+
+    </body>
+    
+</html>
